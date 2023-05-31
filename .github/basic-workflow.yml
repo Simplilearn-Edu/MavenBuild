@@ -1,8 +1,0 @@
-name: GitHub Actions Demo
-run-name: Testing out GitHub Actions
-on: [push]  #action which will trigger the workflow. It can be a single event or an array of events. We can have envents like push, pull_request, schedule, etc
-jobs:     #define the process which will make up the workflow. Each job represent the unit of work that can run independently
-  Basic-Workflow:
-    runs-on: ubuntu-latest       #specifiies the type of execution environment for the job such as ubuntu-latest, windows-latest, macos-latest
-    steps:     #steps contains a list of individual steps that are executed sequentially within a job. Steps define the specific actions to be performed
-      -run: echo "Job is executing as part of Basic workflow"
