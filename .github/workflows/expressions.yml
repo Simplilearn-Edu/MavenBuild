@@ -13,5 +13,5 @@ jobs:
         id: exec
         run: exit 1
       - name: Check if the previous step is success or failure
-        run: echo "Running of failure"
+        run: echo "Running on failure"
         if: ${{failure() && steps.exec.conclusion == 'failure' }}
