@@ -6,7 +6,3 @@ jobs:  #define the process which will make up the workflow . Each job represent 
     runs-on: ubuntu-latest      #specifies the type of execution exnvironment for the job such as ubuntu-latest, windows-latest pr macos-latest
     steps:    #steps contains a list of individual steps that are executed sequentially within a job. Steps defined the specific actions to be performed . 
       - run: echo " Job is executing as part of Basic workflow"  #print the message Job is executing as part of Basic workflow
-  MiWorkflow:
-    runs-on: ubuntu-latest      #specifies the type of execution exnvironment for the job such as ubuntu-latest, windows-latest pr macos-latest
-    steps:    #steps contains a list of individual steps that are executed sequentially within a job. Steps defined the specific actions to be performed . 
-      - run: lsb_release -a
