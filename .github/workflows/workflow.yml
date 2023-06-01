@@ -1,10 +1,12 @@
-name: GitHub actions Reusable Workflow
-run-name: GitHub Action Reusable Workflow
-on:
-  workflow_dispatch:
-  workflow_call:
+name: Conditional Workflow Execution
+on: [push]
 jobs:
-  Basic-Workflow:
+  production-deploy:
+    if: github.ref_name == 'master'
     runs-on: ubuntu-latest
     steps:
-      - run: echo " Job is executing a Reusable Workflow"
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
