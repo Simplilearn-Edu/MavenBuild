@@ -3,4 +3,4 @@ on:
   push:
 jobs:
   Reusable-caller-job:
-    uses: ./.github/workflows/basic-workflow.yml
+    uses: ./.github/workflows/basic/orkflow.yml
